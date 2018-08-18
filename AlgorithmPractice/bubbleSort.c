@@ -6,15 +6,19 @@
 //  Copyright © 2018 shine. All rights reserved.
 //
 
+#include <stdbool.h>
 #include "bubbleSort.h"
 #include "swap.h"
 
 void bubbleSort(int a[], int len){
     int num = 0;
-    for(int i = 0 ; i < len - 1 ; i++){
+    bool flag = true;
+    for(int i = 0 ; i < len - 1 && flag; i++){
+        flag = false;
         for(int j = len - 1; j >= i + 1 ; j--){
             if(a[j-1] > a[j]){
                 swap(a, j-1, j);
+                flag = true;
             }
             num++;
         }
