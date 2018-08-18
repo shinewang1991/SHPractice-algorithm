@@ -10,6 +10,7 @@
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
 		14F58DEE212808970032629B /* swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F58DED212808970032629B /* swap.c */; };
+		14F58DF121280D360032629B /* selectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F58DF021280D360032629B /* selectionSort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		14CF937521228EC300069493 /* bubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubbleSort.c; sourceTree = "<group>"; };
 		14F58DEC212808970032629B /* swap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
 		14F58DED212808970032629B /* swap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = swap.c; sourceTree = "<group>"; };
+		14F58DEF21280D360032629B /* selectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectionSort.h; sourceTree = "<group>"; };
+		14F58DF021280D360032629B /* selectionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = selectionSort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				14CF936D21228A6E00069493 /* main.c */,
 				14CF937421228EC300069493 /* bubbleSort.h */,
 				14CF937521228EC300069493 /* bubbleSort.c */,
+				14F58DEF21280D360032629B /* selectionSort.h */,
+				14F58DF021280D360032629B /* selectionSort.c */,
 				14F58DEC212808970032629B /* swap.h */,
 				14F58DED212808970032629B /* swap.c */,
 			);
@@ -130,6 +135,7 @@
 			files = (
 				14F58DEE212808970032629B /* swap.c in Sources */,
 				14CF936E21228A6E00069493 /* main.c in Sources */,
+				14F58DF121280D360032629B /* selectionSort.c in Sources */,
 				14CF937621228EC300069493 /* bubbleSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

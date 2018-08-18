@@ -8,11 +8,13 @@
 
 #include <stdio.h>
 #include "bubbleSort.h"
+#include "selectionSort.h"
 
 int main(){
     int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
     int len = sizeof(unsortArray) / sizeof(*unsortArray);
-    bubbleSort(unsortArray, len);
+//    bubbleSort(unsortArray, len);
+    selectionSort(unsortArray, len);
     for(int i = 0 ; i < len ; i++){
         printf("%d\n",unsortArray[i]);
     }
