@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
+		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
+		14F58DEE212808970032629B /* swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F58DED212808970032629B /* swap.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		14CF936A21228A6E00069493 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CF936D21228A6E00069493 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		14CF937421228EC300069493 /* bubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubbleSort.h; sourceTree = "<group>"; };
+		14CF937521228EC300069493 /* bubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubbleSort.c; sourceTree = "<group>"; };
+		14F58DEC212808970032629B /* swap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
+		14F58DED212808970032629B /* swap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = swap.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				14CF936D21228A6E00069493 /* main.c */,
+				14CF937421228EC300069493 /* bubbleSort.h */,
+				14CF937521228EC300069493 /* bubbleSort.c */,
+				14F58DEC212808970032629B /* swap.h */,
+				14F58DED212808970032629B /* swap.c */,
 			);
 			path = AlgorithmPractice;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F58DEE212808970032629B /* swap.c in Sources */,
 				14CF936E21228A6E00069493 /* main.c in Sources */,
+				14CF937621228EC300069493 /* bubbleSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
