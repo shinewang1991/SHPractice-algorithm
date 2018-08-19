@@ -9,16 +9,16 @@
 #include "selectionSort.h"
 #include "swap.h"
 
-void selectionSort(int a[], int len){
+void selectionSort(int arr[], int len){
     for(int i = 0 ; i < len - 1; i++){
         int min = i;
         for(int j = i + 1; j < len; j++){
-            if(a[j] < a[min]){
+            if(arr[j] < arr[min]){
                 min = j;
             }
         }
         if(min != i){
-            swap(a, i, min);
+            swap(arr, i, min);
         }
     }
 }

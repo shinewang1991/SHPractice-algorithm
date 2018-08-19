@@ -13,4 +13,4 @@
 
 #endif /* bubbleSort_h */
 
-void bubbleSort(int a[], int len);
+void bubbleSort(int arr[], int len);

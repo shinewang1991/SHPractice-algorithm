@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
+		14EC8E82212914CA007CDF9A /* insertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EC8E81212914CA007CDF9A /* insertionSort.c */; };
 		14F58DEE212808970032629B /* swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F58DED212808970032629B /* swap.c */; };
 		14F58DF121280D360032629B /* selectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14F58DF021280D360032629B /* selectionSort.c */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		14CF936D21228A6E00069493 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		14CF937421228EC300069493 /* bubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubbleSort.h; sourceTree = "<group>"; };
 		14CF937521228EC300069493 /* bubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubbleSort.c; sourceTree = "<group>"; };
+		14EC8E80212914CA007CDF9A /* insertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = insertionSort.h; sourceTree = "<group>"; };
+		14EC8E81212914CA007CDF9A /* insertionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = insertionSort.c; sourceTree = "<group>"; };
 		14F58DEC212808970032629B /* swap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
 		14F58DED212808970032629B /* swap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = swap.c; sourceTree = "<group>"; };
 		14F58DEF21280D360032629B /* selectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectionSort.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				14CF936D21228A6E00069493 /* main.c */,
+				14EC8E80212914CA007CDF9A /* insertionSort.h */,
+				14EC8E81212914CA007CDF9A /* insertionSort.c */,
 				14CF937421228EC300069493 /* bubbleSort.h */,
 				14CF937521228EC300069493 /* bubbleSort.c */,
 				14F58DEF21280D360032629B /* selectionSort.h */,
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EC8E82212914CA007CDF9A /* insertionSort.c in Sources */,
 				14F58DEE212808970032629B /* swap.c in Sources */,
 				14CF936E21228A6E00069493 /* main.c in Sources */,
 				14F58DF121280D360032629B /* selectionSort.c in Sources */,

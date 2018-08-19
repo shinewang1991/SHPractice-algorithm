@@ -13,4 +13,4 @@
 
 #endif /* selectionSort_h */
 
-void selectionSort(int a[], int len);
+void selectionSort(int arr[], int len);
