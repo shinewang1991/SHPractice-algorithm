@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14787521212EA9630050C383 /* quickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14787520212EA9630050C383 /* quickSort.c */; };
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
 		14EC8E82212914CA007CDF9A /* insertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EC8E81212914CA007CDF9A /* insertionSort.c */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1478751F212EA9630050C383 /* quickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
+		14787520212EA9630050C383 /* quickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quickSort.c; sourceTree = "<group>"; };
 		14CF936A21228A6E00069493 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CF936D21228A6E00069493 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		14CF937421228EC300069493 /* bubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubbleSort.h; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		14CF936C21228A6E00069493 /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				14787520212EA9630050C383 /* quickSort.c */,
+				1478751F212EA9630050C383 /* quickSort.h */,
 				14CF936D21228A6E00069493 /* main.c */,
 				14EC8E80212914CA007CDF9A /* insertionSort.h */,
 				14EC8E81212914CA007CDF9A /* insertionSort.c */,
@@ -143,6 +148,7 @@
 				14CF936E21228A6E00069493 /* main.c in Sources */,
 				14F58DF121280D360032629B /* selectionSort.c in Sources */,
 				14CF937621228EC300069493 /* bubbleSort.c in Sources */,
+				14787521212EA9630050C383 /* quickSort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
