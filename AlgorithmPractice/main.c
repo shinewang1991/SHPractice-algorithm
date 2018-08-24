@@ -11,14 +11,17 @@
 #include "selectionSort.h"
 #include "insertionSort.h"
 #include "quickSort.h"
+#include "shellSort.h"
 
 int main(){
-    int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
+//    int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
+    int unsortArray[] = {5,2,7,4,1,9,8,6,3,0};
     int len = sizeof(unsortArray) / sizeof(*unsortArray);
 //    bubbleSort(unsortArray, len);
 //    selectionSort(unsortArray, len);
 //    insertionSort(unsortArray, len);
-    quickSort(unsortArray, len);
+//    quickSort(unsortArray, len);
+    shellSort(unsortArray, len);
     for(int i = 0 ; i < len ; i++){
         printf("%d\n",unsortArray[i]);
     }
