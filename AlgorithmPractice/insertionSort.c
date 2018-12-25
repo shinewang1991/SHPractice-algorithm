@@ -11,10 +11,10 @@
 void insertionSort(int arr[], int len){
     int temp,i,j;
     for(i = 1; i < len; i++){
-        temp = arr[i];
+        temp = arr[i];  //摸下一张牌
         for(j = i; j >= 0 && arr[j-1] > temp ; j--){
-                arr[j] = arr[j-1];
+                arr[j] = arr[j-1];   //移出来空位
         }
-        arr[j] = temp;
+        arr[j] = temp;   //新牌落位
     }
 }

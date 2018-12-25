@@ -31,7 +31,7 @@ void recursion(int arr[], int left, int right){
     if(right - left < 2){
         return;
     }
-    int pivot = getPivot(arr, left, right);
+    int pivot = getPivot(arr, left, right);  //选取中元
     int i = left;
     int j = right - 1;
     for(;;){
@@ -49,6 +49,7 @@ void recursion(int arr[], int left, int right){
     }
     
     swap(arr, i, right-1);
+    //子集划分结束，递归去解决子集的问题
     recursion(arr, left, i-1);
     recursion(arr, i+1, right);
 }

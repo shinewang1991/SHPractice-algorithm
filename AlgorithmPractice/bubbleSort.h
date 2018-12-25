@@ -14,3 +14,4 @@
 #endif /* bubbleSort_h */
 
 void bubbleSort(int arr[], int len);
+void bubbleSort2(int arr[],int len);

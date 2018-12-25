@@ -13,14 +13,13 @@ void shellSort(int arr[], int len){
     int temp;
     int i,j;
     for(gap = len>>1; gap >= 1; gap>>=1){
-        
         //insertSort
         for(i = gap; i < len; i++){
             temp = arr[i];
-            for(j = i - gap; j >= 0 && arr[j] > temp; j-=gap){
-                arr[j+gap] = arr[j];
+            for(j = i; j >=gap && arr[j-gap] > temp; j-=gap){
+                arr[j] = arr[j-gap];
             }
-            arr[j+gap] = temp;
+            arr[j] = temp;
         }
     }
 }
