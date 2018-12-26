@@ -12,6 +12,7 @@
 #include "insertionSort.h"
 #include "quickSort.h"
 #include "shellSort.h"
+#include "mergeSort.h"
 
 int main(){
 //    int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
@@ -21,7 +22,8 @@ int main(){
 //    selectionSort(unsortArray, len);
 //    insertionSort(unsortArray, len);
 //    quickSort(unsortArray, len);
-    shellSort(unsortArray, len);
+//    shellSort(unsortArray, len);
+    mergeSort(unsortArray, len);
     for(int i = 0 ; i < len ; i++){
         printf("%d\n",unsortArray[i]);
     }

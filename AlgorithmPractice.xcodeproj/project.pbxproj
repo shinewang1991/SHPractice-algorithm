@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14411028219FF0CD006F7921 /* mergeSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14411027219FF0CD006F7921 /* mergeSort.c */; };
 		14787521212EA9630050C383 /* quickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14787520212EA9630050C383 /* quickSort.c */; };
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14411026219FF0CD006F7921 /* mergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mergeSort.h; sourceTree = "<group>"; };
+		14411027219FF0CD006F7921 /* mergeSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mergeSort.c; sourceTree = "<group>"; };
 		1478751F212EA9630050C383 /* quickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
 		14787520212EA9630050C383 /* quickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quickSort.c; sourceTree = "<group>"; };
 		14CF936A21228A6E00069493 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +59,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1441102921A64B79006F7921 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				14787520212EA9630050C383 /* quickSort.c */,
+				1478751F212EA9630050C383 /* quickSort.h */,
+				14EC8E80212914CA007CDF9A /* insertionSort.h */,
+				14EC8E81212914CA007CDF9A /* insertionSort.c */,
+				14CF937421228EC300069493 /* bubbleSort.h */,
+				14CF937521228EC300069493 /* bubbleSort.c */,
+				14F58DEF21280D360032629B /* selectionSort.h */,
+				14F58DF021280D360032629B /* selectionSort.c */,
+				14D0271D212FACC2004F0EA0 /* shellSort.h */,
+				14D0271E212FACC2004F0EA0 /* shellSort.c */,
+				14F58DEC212808970032629B /* swap.h */,
+				14F58DED212808970032629B /* swap.c */,
+				14411026219FF0CD006F7921 /* mergeSort.h */,
+				14411027219FF0CD006F7921 /* mergeSort.c */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		14CF936121228A6E00069493 = {
 			isa = PBXGroup;
 			children = (
@@ -75,19 +99,8 @@
 		14CF936C21228A6E00069493 /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				1441102921A64B79006F7921 /* Sort */,
 				14CF936D21228A6E00069493 /* main.c */,
-				14787520212EA9630050C383 /* quickSort.c */,
-				1478751F212EA9630050C383 /* quickSort.h */,
-				14EC8E80212914CA007CDF9A /* insertionSort.h */,
-				14EC8E81212914CA007CDF9A /* insertionSort.c */,
-				14CF937421228EC300069493 /* bubbleSort.h */,
-				14CF937521228EC300069493 /* bubbleSort.c */,
-				14F58DEF21280D360032629B /* selectionSort.h */,
-				14F58DF021280D360032629B /* selectionSort.c */,
-				14D0271D212FACC2004F0EA0 /* shellSort.h */,
-				14D0271E212FACC2004F0EA0 /* shellSort.c */,
-				14F58DEC212808970032629B /* swap.h */,
-				14F58DED212808970032629B /* swap.c */,
 			);
 			path = AlgorithmPractice;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 				14EC8E82212914CA007CDF9A /* insertionSort.c in Sources */,
 				14F58DEE212808970032629B /* swap.c in Sources */,
 				14CF936E21228A6E00069493 /* main.c in Sources */,
+				14411028219FF0CD006F7921 /* mergeSort.c in Sources */,
 				14F58DF121280D360032629B /* selectionSort.c in Sources */,
 				14CF937621228EC300069493 /* bubbleSort.c in Sources */,
 				14787521212EA9630050C383 /* quickSort.c in Sources */,
