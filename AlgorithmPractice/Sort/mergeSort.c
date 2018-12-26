@@ -7,27 +7,57 @@
 //
 
 #include "mergeSort.h"
+#include <stdlib.h>
 
-void merge_sort_recursive(int arr[], int reg[], int start, int end) {
-    if (start >= end)
-        return;
-    int len = end - start, mid = (len >> 1) + start;
-    int start1 = start, end1 = mid;
-    int start2 = mid + 1, end2 = end;
-    merge_sort_recursive(arr, reg, start1, end1);
-    merge_sort_recursive(arr, reg, start2, end2);
-    int k = start;
-    while (start1 <= end1 && start2 <= end2)
-        reg[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
-    while (start1 <= end1)
-        reg[k++] = arr[start1++];
-    while (start2 <= end2)
-        reg[k++] = arr[start2++];
-    for (k = start; k <= end; k++)
-        arr[k] = reg[k];
+void merge(int arr[], int temp[], int left, int right, int rightEnd){
+    int t, leftEnd;
+    t = left;
+    leftEnd = right - 1;
+    int numberOfEmelemts = rightEnd - left + 1;
+    
+    while (left <= leftEnd && right <= rightEnd){
+        if(arr[left] <= arr[right]){
+            temp[t++] = arr[left++];
+        }
+        else{
+            temp[t++] = arr[right++];
+        }
+    }
+    
+    while (left <= leftEnd) {
+        temp[t++] = arr[left++];
+    }
+    
+    while (right <= rightEnd) {
+        temp[t++] = arr[right++];
+    }
+    
+    //最后将临时数组中的数据倒回到原来的数组中
+    for(int i = 0; i<numberOfEmelemts; i++,rightEnd--){
+        arr[rightEnd] = temp[rightEnd];
+    }
+    
 }
 
+void mSort(int arr[], int temp[], int left, int rightEnd){
+    if(left < rightEnd){
+        int center = (left + rightEnd)/2;
+        mSort(arr, temp, left, center);
+        mSort(arr, temp, center+1, rightEnd);
+        merge(arr, temp, left, center+1, rightEnd);
+    }
+    
+}
+
+
 void mergeSort(int arr[], int len){
-    int reg[len];
-    merge_sort_recursive(arr, reg, 0, len - 1);
+    int *temp;
+    temp = (int *)malloc(len * sizeof(int));
+    if(temp != NULL){
+        mSort(arr, temp, 0, len-1);
+        free(temp);
+    }
+    else{
+        printf("内存不足");
+    }
 }
