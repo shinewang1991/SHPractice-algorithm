@@ -7,8 +7,10 @@
 //
 
 #include "binarySearch.h"
+
+//递归版
 int search(const int arr[], int left, int right, int key){
-    if(left < right){
+    if(left <= right){
         int mid = (left + right)/2;
         if(key < arr[mid]){
             return search(arr, left, mid-1, key);
@@ -23,8 +25,30 @@ int search(const int arr[], int left, int right, int key){
     }
 }
 
+//非递归版
+int search1(const int arr[],int left, int right, int key){
+    int l = left;
+    int r = right;
+    int result = -1;
+    while (l<=right) {
+        int center = (l+r)/2;
+        if(key > arr[center]){
+            l+=1;
+        }
+        else if(key < arr[center]){
+            r-=1;
+        }
+        else{
+            result = arr[center];
+            break;
+        }
+    }
+    
+    return result;
+}
+
 void binarySearch(const int arr[], int lengh, int key){
-   int result = search(arr, 0, lengh-1, key);
+   int result = search1(arr, 0, lengh-1, key);
     if(result != -1){
         printf("找到了***%d",result);
     }

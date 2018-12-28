@@ -23,8 +23,8 @@ void sort(void);
 void travalsalTree(void);
 
 int main(){
-//    searchFuc();
-    travalsalTree();
+    searchFuc();
+//    travalsalTree();
     return 0;
 }
 
@@ -44,9 +44,10 @@ void sort(){
 }
 
 void searchFuc(){
-    int arr[] = {5,2,7,4,1,9,8,6,3,0};
+//    int arr[] = {5,2,7,4,1,9,8,6,3,0};
+    int arr[] = {0,1,2,3,4,5,6,7,8};
     int len = sizeof(arr)/sizeof(arr[0]);
-    binarySearch(arr, len, 8);
+    binarySearch(arr, len, 2);
 }
 
 void travalsalTree(){
