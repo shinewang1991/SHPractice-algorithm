@@ -18,13 +18,17 @@
 
 #include "binaryTree.h"
 
+#include "LinkList.h"
+
 void searchFuc(void);
 void sort(void);
 void travalsalTree(void);
+void linkListFun(void);
 
 int main(){
-    searchFuc();
+//    searchFucABC..();
 //    travalsalTree();
+    linkListFun();
     return 0;
 }
 
@@ -48,6 +52,18 @@ void searchFuc(){
     int arr[] = {0,1,2,3,4,5,6,7,8};
     int len = sizeof(arr)/sizeof(arr[0]);
     binarySearch(arr, len, 2);
+}
+
+void linkListFun(){
+    LinkList lp;
+//    lp = createLinkList();
+    lp = createLinkList2();
+    printLinkList(lp);
+//    findKth(lp, 1);
+//    findLinklistElement(lp, 5);
+//    insertLinkList(lp, 3, 4);
+    deleteLinkList(lp, 1);
+    printLinkList(lp);
 }
 
 void travalsalTree(){

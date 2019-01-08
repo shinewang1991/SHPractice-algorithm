@@ -10,12 +10,13 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+#define isArrayQueue 0
 
 #pragma mark -- 队列
 typedef BiTree ElementType;
 #define MAXSize 10
 
-
+#if isArrayQueue
 //用数组实现的队列
 typedef struct QNode{
     ElementType data[MAXSize];
@@ -55,6 +56,70 @@ bool isQueueEmpty(Queue *q){
     return (*q)->size <= 0;
 }
 
+#else
+//用链表实现队列
+struct LinkNode{    //链表
+    ElementType data;
+    struct LinkNode *next;
+};
+
+struct QNode{
+    struct LinkNode *front;
+    struct LinkNode *rear;
+};
+
+typedef struct QNode *Queue;
+
+void createQueue(Queue *q){
+    *q = malloc(sizeof(Queue));
+    if(*q != NULL){
+        (*q)->front = (*q)->rear = malloc(sizeof(struct LinkNode));
+        (*q)->front->next = NULL;
+    }
+    else{
+        printf("空间不足");
+    }
+}
+
+void addQueue(Queue *q, ElementType t){
+    struct LinkNode *node = malloc(sizeof(struct LinkNode));
+    if(node !=NULL){
+        node->data = t;
+        node->next = NULL;
+        (*q)->rear->next = node;
+        (*q)->rear = node;
+    }
+    else{
+        printf("空间不足");
+    }
+    
+}
+
+bool isQueueEmpty(Queue *q){
+    return (*q)->front ==NULL;
+}
+
+ElementType deleteQueue(Queue *q){
+    if(isQueueEmpty(q)){
+        return NULL;
+    }
+    
+    struct LinkNode *node;
+    ElementType elementType;
+    node = (*q)->front;
+    if((*q)->rear == (*q)->front){  //只有一个元素
+        (*q)->front = (*q)->rear = NULL;
+    }
+    else{
+        (*q)->front = (*q)->front->next;
+    }
+    
+    elementType = node->data;
+    free(node);
+    return elementType;
+}
+
+#endif
 
 
 void createBiTree(BiTree *T){
