@@ -13,13 +13,16 @@
 
 #endif /* LinkList_h */
 
+#ifndef __LinkList_Head__
+#define __LinkList_Head__
+
 typedef int ElementType;
 
 typedef struct Node{
     ElementType data;
     struct Node *next;
 }Node,*LinkList;
-
+#endif
 
 //头插法建立链表
 LinkList createLinkList(void);

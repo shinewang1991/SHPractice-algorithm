@@ -153,9 +153,10 @@ LinkList deleteLinkList(LinkList L, int i){
 }
 
 void printLinkList(LinkList lp){
-    Node *l;
-    for (l = lp->next; l!=NULL; l = l->next) {
-        printf("%d-",l->data);
+    LinkList node = lp->next;   //头结点不打印
+    while (node != NULL) {
+        printf("%d-",node->data);
+        node = node->next;
     }
     printf("\n");
 }

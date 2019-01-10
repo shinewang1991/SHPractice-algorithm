@@ -20,15 +20,19 @@
 
 #include "LinkList.h"
 
+#include "toOffer.h"    //剑指offer题目
+
 void searchFuc(void);
 void sort(void);
 void travalsalTree(void);
 void linkListFun(void);
+void toOfferPractice(void);
 
 int main(){
-//    searchFucABC..();
+//    searchFuc();
 //    travalsalTree();
-    linkListFun();
+//    linkListFun();
+    toOfferPractice();
     return 0;
 }
 
@@ -80,5 +84,39 @@ void travalsalTree(){
     postOrderTravalsal(tree);
     printf("层次遍历结果是\n");
     levelOrderTravalsal(tree);
+}
+
+void toOfferPractice(){
+    
+    //题目3
+    int arr[] = {0,1,2,3,3,4,5,6,7,7};
+    int len = sizeof(arr)/sizeof(*arr);
+    int deplicatedNum;
+    result result = findDuplicateNum(arr, len,&deplicatedNum);
+    if(result == 1){
+        printf("找到了%d\n",deplicatedNum);
+    }
+    else{
+        printf("没找到");
+    }
+    
+    //题目5
+//    char str[] = "Hello World";
+//    replaceStr(str);
+//    printf("%s",str);
+    
+    //题目6
+//    LinkList l;
+//    l = createLinkList();
+//    printLinkList(l);
+//    recursionPrintList(l);
+    
+    //题目24
+//    LinkList l;
+//    l = createLinkList();
+//    printLinkList(l);
+//    l = reverseLinkList(l);
+//    printLinkList(l);
+    
 }
 
