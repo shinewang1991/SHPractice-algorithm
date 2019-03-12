@@ -15,5 +15,5 @@
 
 #include "LinkList.h"
 
-//从头到尾打印链表
+//从尾到头打印链表
 void recursionPrintList(LinkList node);

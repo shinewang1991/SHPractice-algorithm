@@ -15,4 +15,4 @@
 
 //二位数组中的查找
 typedef int status;
-status findNum(int arr[4][4],int rows,int colums,int element);
+status findNum(int *array, int rows, int colums, int num);

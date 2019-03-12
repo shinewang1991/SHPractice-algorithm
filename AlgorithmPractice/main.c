@@ -20,19 +20,28 @@
 
 #include "LinkList.h"
 
+#include "graph.h"
+
 #include "toOffer.h"    //剑指offer题目
+
+#include "Interview/Interview.h"
 
 void searchFuc(void);
 void sort(void);
 void travalsalTree(void);
 void linkListFun(void);
 void toOfferPractice(void);
+void playGraph(void);
+void interviewPractice(void);
 
 int main(){
+//    sort();
 //    searchFuc();
 //    travalsalTree();
 //    linkListFun();
+//    playGraph();
     toOfferPractice();
+//    interviewPractice();
     return 0;
 }
 
@@ -40,12 +49,12 @@ void sort(){
     //    int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
     int unsortArray[] = {5,2,7,4,1,9,8,6,3,0};
     int len = sizeof(unsortArray) / sizeof(*unsortArray);
-    //    bubbleSort2(unsortArray, len);
+        bubbleSort(unsortArray, len);
     //    selectionSort(unsortArray, len);
     //    insertionSort(unsortArray, len);
     //    quickSort(unsortArray, len);
     //    shellSort(unsortArray, len);
-    mergeSort(unsortArray, len);
+//    mergeSort(unsortArray, len);
     for(int i = 0 ; i < len ; i++){
         printf("%d\n",unsortArray[i]);
     }
@@ -70,20 +79,41 @@ void linkListFun(){
     printLinkList(lp);
 }
 
+void playGraph(){
+    MGraph graph;
+    graph =  buildMGraph();
+    DFSTraverse(graph);
+    
+}
+
 void travalsalTree(){
     BiTree tree = NULL;
     printf("请前序输入二叉树\n");
     createBiTree(&tree);
-    printf("前序遍历结果是\n");
-    preOrderTravalsal(tree);
+//    printf("前序遍历结果是\n");
+//    preOrderTravalsal(tree);
+//    printf("\n");
+//    printf("前序非递归遍历结果是\n");
+//    preOrderNoTravalsal(tree);
+//    printf("\n");
+//    printf("中序遍历结果是\n");
+//    inOrderTravalsal(tree);
+//    printf("\n");
+//    printf("非递归中序遍历结果是\n");
+//    inOrderNoTravalsal(tree);
+//    printf("\n");
+//    printf("后序遍历结果是\n");
+//    postOrderTravalsal(tree);
+//    printf("\n");
+//    printf("后序非递归遍历结果是:\n");
+//    postOrderNoTravalsal(tree);
+//    printf("\n");
+//    printf("层次遍历结果是\n");
+//    levelOrderTravalsal(tree);
     printf("\n");
-    printf("中序遍历结果是\n");
-    inOrderTravalsal(tree);
+    printf("Z字形层次遍历结果是:\n");
+    zLevelTravalsal(tree);
     printf("\n");
-    printf("后序遍历结果是\n");
-    postOrderTravalsal(tree);
-    printf("层次遍历结果是\n");
-    levelOrderTravalsal(tree);
 }
 
 void toOfferPractice(){
@@ -109,7 +139,7 @@ void toOfferPractice(){
 //    };
 //    int row = sizeof(arr)/sizeof(arr[0]);
 //    int column = sizeof(arr[0])/sizeof(arr[0][0]);
-//    status result = findNum(arr, row, column, 3);
+//    status result = findNum(arr, row, column, 11);
 //    printf(result == 1 ? "找到了":"没找到");
     
     //题目5
@@ -125,12 +155,13 @@ void toOfferPractice(){
     
     //题目10
 //    printf("第5个斐波拉契数列数为-%lld",Fibonacci(10));
+//    printf("青蛙6个台阶的跳法为%d\n",jumpFloorRecursion(6));
     
     //题目14
-    int len = 8;
-//    int result = maxProductAfterCuttingSolution1(len);
-    int result = maxProductAfterCuttingSolution2(len);
-    printf("长度为%d的绳子分割若干段后最大乘积为%d",len,result);
+//    int len = 8;
+////    int result = maxProductAfterCuttingSolution1(len);
+//    int result = maxProductAfterCuttingSolution2(len);
+//    printf("长度为%d的绳子分割若干段后最大乘积为%d",len,result);
     
     //题目15
 //    int num = 9;
@@ -152,6 +183,11 @@ void toOfferPractice(){
 //    deleteNode(&linkList, pToBeDelete);
 //    printLinkList(linkList);
     
+    //题目22
+//    LinkList l;
+//    l = createLinkList();
+//    findKthToTail(l, 3);
+    
     //题目24
 //    LinkList l;
 //    l = createLinkList();
@@ -167,6 +203,44 @@ void toOfferPractice(){
 //    Node *mergedNode = mergeLinkList(nodeA, nodeB);
 //    printLinkList(mergedNode);
     
+    //题目27
+//    BiTree tree = NULL;
+//    printf("请前序构建一颗二叉树:\n");
+//    createBiTree(&tree);
+//    printf("前序遍历结果:\n");
+//    preOrderTravalsal(tree);
+//    printf("\n");
+//    mirrorRecursive(tree);
+//    printf("镜像树前序遍历结果:\n");
+//    preOrderTravalsal(tree);
+    
+    //题目28
+//    BiTree tree = NULL;
+//    printf("请前序构建一颗二叉树:\n");
+//    createBiTree(&tree);
+//    bool result = isSymmetricBiTree(tree);
+//    printf("这棵树%s是对称二叉树",result ? "":"不");
+    
+    //题目50
+//    char *testString = "abcbdfge";
+//    printf("testString中得一个只出现一次的字符是%c\n",findFirstNotRepeatingChar(testString));
+    
+    //题目58
+    //反转字符串
+//    char str[] = "hello";
+//    reverseString(str);
+//    printf("反转之后的字符串为%s\n",str);
+    
+//    char str1[] = "i am a student.";
+//    reverseSentence(str1);
+//    printf("反转之后的句子为%s\n",str1);
+    
+    //题目63
+    int numbers[] = {9,11,8,5,7,12,16,14};
+    int len = sizeof(numbers)/sizeof(numbers[0]);
+    printf("最大股票收益为%d",maxPrice(numbers, len));
+    
+    
     //题目65
 //    int num1 = 9;
 //    int num2 = 17;
@@ -178,3 +252,8 @@ void toOfferPractice(){
     
 }
 
+void interviewPractice(){
+    char *str = "aaabbc";
+    int len = sizeof(str)/sizeof(str[0]);
+    compressString(str, len);
+}

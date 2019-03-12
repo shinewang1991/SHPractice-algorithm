@@ -10,13 +10,28 @@
 #define binaryTree_h
 
 #include <stdio.h>
-
-#endif /* binaryTree_h */
+#include <stdbool.h>
 typedef struct BiNode{
     char data;
     struct BiNode *left;
     struct BiNode *right;
 }BiNode,*BiTree;
+
+#define maxSize 100
+typedef int status;
+//二叉树节点的栈结构
+struct stackNode{
+    BiTree data[maxSize];
+    int top;
+};
+typedef struct stackNode *BiStack;
+
+BiStack createStack(void);
+status push(BiStack stack, BiTree node);
+BiTree pop(BiStack stack);
+bool isStackEmpty(BiStack stack);
+
+#endif /* binaryTree_h */
 
 //创建树
 void createBiTree(BiTree *T);
@@ -32,3 +47,15 @@ void postOrderTravalsal(BiTree T);
 
 //层次遍历
 void levelOrderTravalsal(BiTree T);
+
+//前序非递归遍历
+void preOrderNoTravalsal(BiTree T);
+
+//中序非递归遍历
+void inOrderNoTravalsal(BiTree T);
+
+//后续非递归遍历
+void postOrderNoTravalsal(BiTree T);
+
+//Z字形层次遍历
+void zLevelTravalsal(BiTree T);

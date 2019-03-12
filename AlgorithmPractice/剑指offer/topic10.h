@@ -14,3 +14,10 @@
 #endif /* topic10_h */
 //斐波拉契数列
 long long Fibonacci(unsigned int n);
+
+
+//青蛙跳台阶问题
+int jumpFloor(int n);
+
+//递归解法
+int jumpFloorRecursion(int n);

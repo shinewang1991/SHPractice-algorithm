@@ -7,25 +7,24 @@
 //
 
 #include "topic4.h"
-
-status findNum(int arr[4][4],int rows,int colums,int element){
-    status result = 0;
-    if(arr != NULL && rows>0 && colums>0){
+#include <stdbool.h>
+status findNum(int *array, int rows, int colums, int num){
+    bool found = 0;
+    if(array != NULL && rows > 0 && colums > 0){
         int row = 0;
-        int column = colums-1;
-        while (row<rows && colums>0) {
-            if(arr[row][column]==element){
-                result = 1;
+        int colum = colums - 1;
+        while (row < rows && colum >= 0) {
+            if(array[row * colums + colum] == num){
+                found = 1;
                 break;
             }
-            else if(arr[row][column] > element){
-                column--;
+            else if(array[row * colums + colum] > num){
+                colum--;
             }
             else{
                 row++;
             }
         }
     }
-    
-    return result;
+    return found;
 }
