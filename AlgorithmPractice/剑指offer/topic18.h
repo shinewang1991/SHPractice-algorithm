@@ -14,4 +14,5 @@
 #endif /* topic18_h */
 #include "LinkList.h"
 
+//链表删除节点
 void deleteNode(Node **pListHead, Node *p_ToBeDeleted);

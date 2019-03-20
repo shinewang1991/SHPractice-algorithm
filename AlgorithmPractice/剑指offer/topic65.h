@@ -13,5 +13,8 @@
 
 #endif /* topic65_h */
 
+//不用加减乘除做加法
 int add(int num1,int num2);
+
+//不用第三个变量交换两个数值
 void newSwap(int *num1,int *num2);

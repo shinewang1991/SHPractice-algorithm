@@ -13,4 +13,6 @@
 
 #endif /* topic25_h */
 #include "LinkList.h"
+
+//合并两个排序的链表
 Node* mergeLinkList(Node *nodeA,Node *nodeB);

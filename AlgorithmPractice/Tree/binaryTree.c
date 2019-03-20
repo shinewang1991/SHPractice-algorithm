@@ -170,6 +170,27 @@ void createBiTree(BiTree *T){
     
 }
 
+void createBiTree2(BiTree *T, char arr[], int len){
+    static int index = 0;
+    if(index<len){
+        char data = arr[index];
+        if(data == '.'){
+            *T = NULL;
+        }
+        else{
+            *T = (BiTree)malloc(sizeof(BiNode));
+            (*T)->data = data;
+            index++;
+            createBiTree2(&(*T)->left,arr,len);
+            index++;
+            createBiTree2(&(*T)->right,arr,len);
+        }
+    }
+    if(index == len-1){     //最后一次递归后，将index置为0
+        index = 0;
+    }
+}
+
 void preOrderTravalsal(BiTree T){
     if(T!=NULL){
         printf("%c",T->data);

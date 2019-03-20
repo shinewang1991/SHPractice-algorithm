@@ -31,11 +31,13 @@
 		1469A1A621E769BC00B2AC02 /* topic10.c in Sources */ = {isa = PBXBuildFile; fileRef = 1469A1A521E769BC00B2AC02 /* topic10.c */; };
 		1469A1A921E7821600B2AC02 /* topic25.c in Sources */ = {isa = PBXBuildFile; fileRef = 1469A1A821E7821600B2AC02 /* topic25.c */; };
 		14787521212EA9630050C383 /* quickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14787520212EA9630050C383 /* quickSort.c */; };
+		147B4BBE223C9237007BA041 /* topic26.c in Sources */ = {isa = PBXBuildFile; fileRef = 147B4BBD223C9237007BA041 /* topic26.c */; };
 		148FC71E222D52B70047931F /* Interview.c in Sources */ = {isa = PBXBuildFile; fileRef = 148FC71D222D52B70047931F /* Interview.c */; };
 		1495C07D2236872800056B5C /* topic63.c in Sources */ = {isa = PBXBuildFile; fileRef = 1495C07C2236872800056B5C /* topic63.c */; };
 		149739CE2226A81200037EBC /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 149739CD2226A81200037EBC /* TestObject.m */; };
 		149739D12226B28200037EBC /* topic58.c in Sources */ = {isa = PBXBuildFile; fileRef = 149739D02226B28200037EBC /* topic58.c */; };
 		149D7B4F222E170F00C3D48C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 149D7B4E222E170F00C3D48C /* stack.c */; };
+		14BF49F3223BA80A00CB8A81 /* topic9.c in Sources */ = {isa = PBXBuildFile; fileRef = 14BF49F2223BA80A00CB8A81 /* topic9.c */; };
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
 		14D0271F212FACC2004F0EA0 /* shellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14D0271E212FACC2004F0EA0 /* shellSort.c */; };
@@ -109,6 +111,8 @@
 		1469A1A821E7821600B2AC02 /* topic25.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic25.c; sourceTree = "<group>"; };
 		1478751F212EA9630050C383 /* quickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
 		14787520212EA9630050C383 /* quickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quickSort.c; sourceTree = "<group>"; };
+		147B4BBC223C9237007BA041 /* topic26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic26.h; sourceTree = "<group>"; };
+		147B4BBD223C9237007BA041 /* topic26.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic26.c; sourceTree = "<group>"; };
 		148FC71C222D52B70047931F /* Interview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interview.h; sourceTree = "<group>"; };
 		148FC71D222D52B70047931F /* Interview.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Interview.c; sourceTree = "<group>"; };
 		1495C07B2236872800056B5C /* topic63.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic63.h; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		149739D02226B28200037EBC /* topic58.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic58.c; sourceTree = "<group>"; };
 		149D7B4D222E170F00C3D48C /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		149D7B4E222E170F00C3D48C /* stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		14BF49F1223BA80A00CB8A81 /* topic9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic9.h; sourceTree = "<group>"; };
+		14BF49F2223BA80A00CB8A81 /* topic9.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic9.c; sourceTree = "<group>"; };
 		14CF936A21228A6E00069493 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		14CF936D21228A6E00069493 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		14CF937421228EC300069493 /* bubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bubbleSort.h; sourceTree = "<group>"; };
@@ -233,6 +239,8 @@
 				1469A19621E6F2B000B2AC02 /* topic5.c */,
 				1469A19821E6F40F00B2AC02 /* topic6.h */,
 				1469A19921E6F40F00B2AC02 /* topic6.c */,
+				14BF49F1223BA80A00CB8A81 /* topic9.h */,
+				14BF49F2223BA80A00CB8A81 /* topic9.c */,
 				1469A1A421E769BC00B2AC02 /* topic10.h */,
 				1469A1A521E769BC00B2AC02 /* topic10.c */,
 				14459BC621EE09B900C87AD5 /* topic14.h */,
@@ -251,6 +259,8 @@
 				1469A19C21E71B7000B2AC02 /* topic24.c */,
 				1469A1A721E7821600B2AC02 /* topic25.h */,
 				1469A1A821E7821600B2AC02 /* topic25.c */,
+				147B4BBC223C9237007BA041 /* topic26.h */,
+				147B4BBD223C9237007BA041 /* topic26.c */,
 				14079CE621F2E9E400606D55 /* topic27.h */,
 				14079CE721F2E9E400606D55 /* topic27.c */,
 				141B8F6E21F49CEA00140C20 /* topic28.h */,
@@ -411,6 +421,8 @@
 				14F58DEE212808970032629B /* swap.c in Sources */,
 				1469A1A621E769BC00B2AC02 /* topic10.c in Sources */,
 				1469A19D21E71B7000B2AC02 /* topic24.c in Sources */,
+				147B4BBE223C9237007BA041 /* topic26.c in Sources */,
+				14BF49F3223BA80A00CB8A81 /* topic9.c in Sources */,
 				1469A1A321E7310B00B2AC02 /* topic4.c in Sources */,
 				14079CE821F2E9E400606D55 /* topic27.c in Sources */,
 				14459BC821EE09B900C87AD5 /* topic14.c in Sources */,

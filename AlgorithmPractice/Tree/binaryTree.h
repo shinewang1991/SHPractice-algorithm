@@ -36,6 +36,9 @@ bool isStackEmpty(BiStack stack);
 //创建树
 void createBiTree(BiTree *T);
 
+//根据已有数组创建树
+void createBiTree2(BiTree *T, char arr[], int len);
+
 //前序遍历
 void preOrderTravalsal(BiTree T);
 

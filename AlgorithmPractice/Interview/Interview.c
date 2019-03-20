@@ -51,3 +51,41 @@ char* compressString1(char *input, int len){
     return result;
     
 }
+
+bool isPalindrome(int number){
+    int reversedNum = 0;
+    int n = number;
+    int reminder = 0;
+    while (n!=0) {
+        reminder = n % 10;
+        reversedNum = reversedNum * 10 + reminder;
+        n/=10;
+    }
+    if(reversedNum == number){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+bool isPalindromeStr(char *numberStr){
+    if(numberStr == NULL){
+        return false;
+    }
+
+    char *start = numberStr;
+    char *end = numberStr;
+    while (*end != '0') {
+        end++;
+    }
+    end--;
+    while (start<=end) {
+        if(*start != *end){
+            return false;
+        }
+        ++start;
+        --end;
+    }
+    return true;
+}

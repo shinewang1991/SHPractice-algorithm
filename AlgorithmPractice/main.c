@@ -153,6 +153,24 @@ void toOfferPractice(){
 //    printLinkList(l);
 //    recursionPrintList(l);
     
+    //题目9
+//    stackQueue queue = createStackQueue();
+//    enStackQueue(queue, 'c');
+//    enStackQueue(queue, 'b');
+//    enStackQueue(queue, 'a');
+//    enStackQueue(queue, 'd');
+//    qStackType data;
+//    deStackQueue(queue, &data);
+//    printf("第一个弹出的-%c\n",data);
+//    deStackQueue(queue, &data);
+//    printf("第二个弹出的-%c\n",data);
+//    deStackQueue(queue, &data);
+//    printf("第三个弹出的-%c\n",data);
+//    deStackQueue(queue, &data);
+//    printf("第四个弹出的-%c\n",data);
+//    deStackQueue(queue, &data);
+    
+    
     //题目10
 //    printf("第5个斐波拉契数列数为-%lld",Fibonacci(10));
 //    printf("青蛙6个台阶的跳法为%d\n",jumpFloorRecursion(6));
@@ -203,6 +221,24 @@ void toOfferPractice(){
 //    Node *mergedNode = mergeLinkList(nodeA, nodeB);
 //    printLinkList(mergedNode);
     
+    //题目26
+    BiTree tree1 = NULL;
+    BiTree tree2 = NULL;
+    char arr[] = {'A','B','.','.','C','D','F','.','.','G','.','.','E','.','.'};
+    int len = sizeof(arr)/sizeof(*arr);
+    char arr2[] = {'C','D','F','.','.','.','E','.','.'};
+//    char arr2[] = {'C','D','.','.','F','.','.'};
+    int len2 = sizeof(arr2)/sizeof(*arr2);
+    createBiTree2(&tree1, arr, len);
+    createBiTree2(&tree2, arr2, len2);
+    preOrderTravalsal(tree1);
+    printf("\n");
+    preOrderTravalsal(tree2);
+    printf("\n");
+    bool result = hasSubtree(tree1, tree2);
+    printf(result?"tree1包含子树tree2":"tree1不包含子树tree2");
+    
+    
     //题目27
 //    BiTree tree = NULL;
 //    printf("请前序构建一颗二叉树:\n");
@@ -221,6 +257,7 @@ void toOfferPractice(){
 //    bool result = isSymmetricBiTree(tree);
 //    printf("这棵树%s是对称二叉树",result ? "":"不");
     
+    
     //题目50
 //    char *testString = "abcbdfge";
 //    printf("testString中得一个只出现一次的字符是%c\n",findFirstNotRepeatingChar(testString));
@@ -236,9 +273,9 @@ void toOfferPractice(){
 //    printf("反转之后的句子为%s\n",str1);
     
     //题目63
-    int numbers[] = {9,11,8,5,7,12,16,14};
-    int len = sizeof(numbers)/sizeof(numbers[0]);
-    printf("最大股票收益为%d",maxPrice(numbers, len));
+//    int numbers[] = {9,11,8,5,7,12,16,14};
+//    int len = sizeof(numbers)/sizeof(numbers[0]);
+//    printf("最大股票收益为%d",maxPrice(numbers, len));
     
     
     //题目65
@@ -253,7 +290,15 @@ void toOfferPractice(){
 }
 
 void interviewPractice(){
-    char *str = "aaabbc";
-    int len = sizeof(str)/sizeof(str[0]);
-    compressString(str, len);
+//    char *str = "aaabbc";
+//    int len = sizeof(str)/sizeof(str[0]);
+//    compressString(str, len);
+    
+    //判断回文数
+//    int number = 1234321;
+//    printf(isPalindrome(number) ? "%d是回文数\n":"%d不是回文数\n",number);
+    
+    char *numberStr = "12321";
+    bool result = isPalindromeStr(numberStr);
+    printf(result?"是回文字符串":"不是回文字符串");
 }
