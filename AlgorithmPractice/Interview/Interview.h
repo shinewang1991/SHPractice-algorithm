@@ -24,3 +24,8 @@ bool isPalindrome(int number);
 
 //判断一个字符串是不是回文数
 bool isPalindromeStr(char *numberStr);
+
+//从无序数组当中查找中位数
+int getMidNumber(int arr[],int len);
+
+int FindMid(int array[], int size);

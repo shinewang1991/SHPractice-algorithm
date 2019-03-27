@@ -24,6 +24,8 @@
 
 #include "toOffer.h"    //剑指offer题目
 
+#include "leetCode.h"
+
 #include "Interview/Interview.h"
 
 void searchFuc(void);
@@ -31,17 +33,19 @@ void sort(void);
 void travalsalTree(void);
 void linkListFun(void);
 void toOfferPractice(void);
+void leetCodePractice(void);
 void playGraph(void);
 void interviewPractice(void);
 
 int main(){
 //    sort();
 //    searchFuc();
-//    travalsalTree();
+    travalsalTree();
 //    linkListFun();
 //    playGraph();
-    toOfferPractice();
+//    toOfferPractice();
 //    interviewPractice();
+//    leetCodePractice();
     return 0;
 }
 
@@ -90,30 +94,30 @@ void travalsalTree(){
     BiTree tree = NULL;
     printf("请前序输入二叉树\n");
     createBiTree(&tree);
-//    printf("前序遍历结果是\n");
-//    preOrderTravalsal(tree);
-//    printf("\n");
+    printf("前序遍历结果是\n");
+    preOrderTravalsal(tree);
+    printf("\n");
 //    printf("前序非递归遍历结果是\n");
 //    preOrderNoTravalsal(tree);
 //    printf("\n");
-//    printf("中序遍历结果是\n");
-//    inOrderTravalsal(tree);
-//    printf("\n");
+    printf("中序遍历结果是\n");
+    inOrderTravalsal(tree);
+    printf("\n");
 //    printf("非递归中序遍历结果是\n");
 //    inOrderNoTravalsal(tree);
 //    printf("\n");
-//    printf("后序遍历结果是\n");
-//    postOrderTravalsal(tree);
-//    printf("\n");
+    printf("后序遍历结果是\n");
+    postOrderTravalsal(tree);
+    printf("\n");
 //    printf("后序非递归遍历结果是:\n");
 //    postOrderNoTravalsal(tree);
 //    printf("\n");
 //    printf("层次遍历结果是\n");
 //    levelOrderTravalsal(tree);
-    printf("\n");
-    printf("Z字形层次遍历结果是:\n");
-    zLevelTravalsal(tree);
-    printf("\n");
+//    printf("\n");
+//    printf("Z字形层次遍历结果是:\n");
+//    zLevelTravalsal(tree);
+//    printf("\n");
 }
 
 void toOfferPractice(){
@@ -298,7 +302,16 @@ void interviewPractice(){
 //    int number = 1234321;
 //    printf(isPalindrome(number) ? "%d是回文数\n":"%d不是回文数\n",number);
     
-    char *numberStr = "12321";
-    bool result = isPalindromeStr(numberStr);
-    printf(result?"是回文字符串":"不是回文字符串");
+//    char *numberStr = "12321";
+//    bool result = isPalindromeStr(numberStr);
+//    printf(result?"是回文字符串":"不是回文字符串");
+    
+    //无序数组查找中位数
+    int arr[8] = {3,7,4,6,2,9,5,18};
+    int len = sizeof(arr)/sizeof(*arr);
+    printf("中位数-----%d",getMidNumber(arr, len));
+}
+
+void leetCodePractice(){
+    printf("3*7的矩阵路线一共有%d种\n",uniquePaths(3, 7));
 }

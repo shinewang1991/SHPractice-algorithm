@@ -41,6 +41,7 @@
 		14CF936E21228A6E00069493 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF936D21228A6E00069493 /* main.c */; };
 		14CF937621228EC300069493 /* bubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14CF937521228EC300069493 /* bubbleSort.c */; };
 		14D0271F212FACC2004F0EA0 /* shellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14D0271E212FACC2004F0EA0 /* shellSort.c */; };
+		14DD96C12243CF2A0080FF18 /* code62.c in Sources */ = {isa = PBXBuildFile; fileRef = 14DD96C02243CF2A0080FF18 /* code62.c */; };
 		14E3A7EE2201AB6000167974 /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = 14E3A7ED2201AB6000167974 /* graph.c */; };
 		14E580D0221C316800385365 /* topic22.c in Sources */ = {isa = PBXBuildFile; fileRef = 14E580CF221C316800385365 /* topic22.c */; };
 		14EAF0D4221C371600920738 /* topic23.c in Sources */ = {isa = PBXBuildFile; fileRef = 14EAF0D3221C371600920738 /* topic23.c */; };
@@ -131,6 +132,9 @@
 		14CF937521228EC300069493 /* bubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bubbleSort.c; sourceTree = "<group>"; };
 		14D0271D212FACC2004F0EA0 /* shellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shellSort.h; sourceTree = "<group>"; };
 		14D0271E212FACC2004F0EA0 /* shellSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shellSort.c; sourceTree = "<group>"; };
+		14DD96BE2243CF0A0080FF18 /* leetCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leetCode.h; sourceTree = "<group>"; };
+		14DD96BF2243CF2A0080FF18 /* code62.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = code62.h; sourceTree = "<group>"; };
+		14DD96C02243CF2A0080FF18 /* code62.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = code62.c; sourceTree = "<group>"; };
 		14E3A7EC2201AB6000167974 /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
 		14E3A7ED2201AB6000167974 /* graph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
 		14E580CE221C316800385365 /* topic22.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic22.h; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 		14CF936C21228A6E00069493 /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				14DD96BA2243CEE90080FF18 /* LeetCode */,
 				148FC71B222D52A00047931F /* Interview */,
 				1469A19021E6EB0900B2AC02 /* 剑指offer */,
 				1426C4B821E38CC400D7E46A /* LinkList */,
@@ -346,6 +351,16 @@
 				14CF936D21228A6E00069493 /* main.c */,
 			);
 			path = AlgorithmPractice;
+			sourceTree = "<group>";
+		};
+		14DD96BA2243CEE90080FF18 /* LeetCode */ = {
+			isa = PBXGroup;
+			children = (
+				14DD96BE2243CF0A0080FF18 /* leetCode.h */,
+				14DD96BF2243CF2A0080FF18 /* code62.h */,
+				14DD96C02243CF2A0080FF18 /* code62.c */,
+			);
+			path = LeetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +455,7 @@
 				14CF937621228EC300069493 /* bubbleSort.c in Sources */,
 				14787521212EA9630050C383 /* quickSort.c in Sources */,
 				149D7B4F222E170F00C3D48C /* stack.c in Sources */,
+				14DD96C12243CF2A0080FF18 /* code62.c in Sources */,
 				14459BBF21ED879900C87AD5 /* topic18.c in Sources */,
 				148FC71E222D52B70047931F /* Interview.c in Sources */,
 				1401F6CE222650F8008A4B06 /* topic50.c in Sources */,
