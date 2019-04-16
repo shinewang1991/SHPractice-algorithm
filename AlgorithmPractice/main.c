@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "bubbleSort.h"
 #include "selectionSort.h"
 #include "insertionSort.h"
@@ -39,8 +40,8 @@ void interviewPractice(void);
 
 int main(){
 //    sort();
-//    searchFuc();
-    travalsalTree();
+    searchFuc();
+//    travalsalTree();
 //    linkListFun();
 //    playGraph();
 //    toOfferPractice();
@@ -65,10 +66,9 @@ void sort(){
 }
 
 void searchFuc(){
-//    int arr[] = {5,2,7,4,1,9,8,6,3,0};
     int arr[] = {0,1,2,3,4,5,6,7,8};
     int len = sizeof(arr)/sizeof(arr[0]);
-    binarySearch(arr, len, 2);
+    binarySearch(arr, len, 3);
 }
 
 void linkListFun(){
@@ -226,21 +226,21 @@ void toOfferPractice(){
 //    printLinkList(mergedNode);
     
     //题目26
-    BiTree tree1 = NULL;
-    BiTree tree2 = NULL;
-    char arr[] = {'A','B','.','.','C','D','F','.','.','G','.','.','E','.','.'};
-    int len = sizeof(arr)/sizeof(*arr);
-    char arr2[] = {'C','D','F','.','.','.','E','.','.'};
-//    char arr2[] = {'C','D','.','.','F','.','.'};
-    int len2 = sizeof(arr2)/sizeof(*arr2);
-    createBiTree2(&tree1, arr, len);
-    createBiTree2(&tree2, arr2, len2);
-    preOrderTravalsal(tree1);
-    printf("\n");
-    preOrderTravalsal(tree2);
-    printf("\n");
-    bool result = hasSubtree(tree1, tree2);
-    printf(result?"tree1包含子树tree2":"tree1不包含子树tree2");
+//    BiTree tree1 = NULL;
+//    BiTree tree2 = NULL;
+//    char arr[] = {'A','B','.','.','C','D','F','.','.','G','.','.','E','.','.'};
+//    int len = sizeof(arr)/sizeof(*arr);
+//    char arr2[] = {'C','D','F','.','.','.','E','.','.'};
+////    char arr2[] = {'C','D','.','.','F','.','.'};
+//    int len2 = sizeof(arr2)/sizeof(*arr2);
+//    createBiTree2(&tree1, arr, len);
+//    createBiTree2(&tree2, arr2, len2);
+//    preOrderTravalsal(tree1);
+//    printf("\n");
+//    preOrderTravalsal(tree2);
+//    printf("\n");
+//    bool result = hasSubtree(tree1, tree2);
+//    printf(result?"tree1包含子树tree2":"tree1不包含子树tree2");
     
     
     //题目27
@@ -265,6 +265,20 @@ void toOfferPractice(){
     //题目50
 //    char *testString = "abcbdfge";
 //    printf("testString中得一个只出现一次的字符是%c\n",findFirstNotRepeatingChar(testString));
+    
+    //题目56
+    int arr[] = {2,4,3,3,2,5,5};
+    int len = sizeof(arr)/sizeof(*arr);
+    int result = findOneNumAppearOnce(arr, len);
+    printf("arr中唯一出现一次的数字是%d\n",result);
+    
+    
+//    int arr[] = {2,4,3,6,3,2,5,5};
+//    int len = sizeof(arr)/sizeof(*arr);
+//    int num1;
+//    int num2;
+//    findNumsAppearOnce(arr, len, &num1, &num2);
+//    printf("arr中出现一次的两个数字是%d,%d",num1,num2);
     
     //题目58
     //反转字符串
@@ -307,9 +321,35 @@ void interviewPractice(){
 //    printf(result?"是回文字符串":"不是回文字符串");
     
     //无序数组查找中位数
-    int arr[8] = {3,7,4,6,2,9,5,18};
-    int len = sizeof(arr)/sizeof(*arr);
-    printf("中位数-----%d",getMidNumber(arr, len));
+//    int arr[8] = {3,7,4,6,2,9,5,18};
+//    int len = sizeof(arr)/sizeof(*arr);
+//    printf("中位数-----%d",getMidNumber(arr, len));
+    
+    //求两个数组的并集
+//    int a[] = {1,2,3,3,5};
+//    int b[] = {3,4,5,6};
+//    int len1 = sizeof(a)/sizeof(*a);
+//    int len2 = sizeof(b)/sizeof(*b);
+//    int len;
+//    int *result = unionArray(a, len1, b, len2,&len);
+//    printf("合并后的数组为\n");
+//    for(int i = 0; i < len; i++){
+//        printf("%d\n",result[i]);
+//    }
+//    free(result);
+//    result = NULL;
+    
+    
+    //题目
+//    int arr[8] = {0,2,5,5,5,7,8,9};
+//    int len = sizeof(arr) / sizeof(*arr);
+//    int value = getNumberIndex(arr, len, 3);
+    
+    //找出1连续出现的最大次数
+    int arr[9] = {0,1,1,1,0,1,0,1,1};
+    int len = sizeof(arr) / sizeof(*arr);
+    int value = getNumberOf1(arr, len);
+    
 }
 
 void leetCodePractice(){

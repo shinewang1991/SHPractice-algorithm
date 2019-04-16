@@ -8,6 +8,7 @@
 
 #include "Interview.h"
 #include "swap.h"
+#include <stdlib.h>
 void compressString(char *input,int len){
     int i = 0;
     int count = 1;
@@ -91,44 +92,6 @@ bool isPalindromeStr(char *numberStr){
     return true;
 }
 
-int partionMid(int arr[], int left, int right){
-    int begin = left;
-    int end = right;
-    int pivot = arr[right];
-    while (begin < end) {
-        while (begin < end && arr[begin] <= pivot) {
-            begin++;
-        }
-        while (begin < end && arr[end] >= pivot) {
-            end--;
-            
-        }
-        if(begin<end){
-            swap(arr, begin, end);
-        }
-    }
-    
-    swap(arr, begin, right);    //将pivot移到正确的位置
-    return begin;
-}
-
-int getMidNumber(int arr[],int len){
-    int left = 0;
-    int right = len-1;
-    int pivotIndex = partionMid(arr, 0, right);
-    int mid = (right - left)/2;
-    while (mid!=pivotIndex) {
-        if(pivotIndex < mid){
-            pivotIndex = partionMid(arr, pivotIndex+1, right);
-        }
-        else if(pivotIndex > mid){
-            pivotIndex = partionMid(arr, left, pivotIndex-1);
-        }
-    }
-    return arr[mid];
-}
-
-
 int PartionMid(int array[], int left ,int right)
 {
     
@@ -183,3 +146,94 @@ int FindMid(int array[], int size)
     return array[mid];
     
 }
+
+int* unionArray(int *a, int len1, int *b, int len2, int *lengh){
+    int len = len1 + len2;
+//    int *result = (int *)malloc(sizeof(int) * len);
+    int *result = calloc(len, sizeof(int));
+    for(int i = 0;i < len1; i++){
+        result[i] = a[i];
+    }
+    int index = len1;
+    
+    for(int i = 0; i < len2; i++){
+        int temp = b[i];
+        int insert = 1;
+        for(int j = 0; j < len1; j++){
+            if(a[j] == temp){
+                insert = 0;
+                break;
+            }
+        }
+        if(insert){
+            result[index++] = temp;
+        }
+    }
+    *lengh = index;
+    return result;
+}
+
+
+int getNumberIndex(int *arr, int len, int value){
+    int middle = (len - 1)/2;
+    int left = 0;
+    int right = len-1;
+    
+    int returnIndex = right;
+    int insertIndex = 0;
+    while (left<right) {
+        int middleValue = arr[middle];
+        if(middleValue > value){
+            right = middle - 1;
+            insertIndex = left+1;
+        }
+        else if(middleValue < value){
+            left = middle + 1;
+            insertIndex = left+1;
+        }
+        else{
+            if(middle < returnIndex){
+                returnIndex = middle;
+                right = middle;
+            }
+        }
+        middle = (left + right)/2;
+    }
+    if(arr[returnIndex] != value){
+        returnIndex = insertIndex;
+    }
+    return returnIndex;
+}
+
+
+int getNumberOf1(int *arr, int len){
+    int numberOf1 = 0;
+    int maxValue = 0;
+    for(int i = 0; i < len; i++){
+        if(arr[i] == 1){
+            numberOf1++;
+            if(numberOf1 > maxValue){
+                maxValue = numberOf1;
+            }
+        }
+        else{
+            numberOf1=0;
+        }
+    }
+    return maxValue;
+}
+
+//int getMaxValue(int *arr, int len){
+//    int numberOf1 = 0;
+//    int numberOf0 = 0;
+//    for(int i = 0 ;i < len - 1; i++){
+//        if(arr[i+1] == arr[i]){
+//            if(arr[i] == 1){
+//                numberOf1++;
+//            }
+//            else{
+//                numberOf0++;
+//            }
+//        }
+//    }
+//}

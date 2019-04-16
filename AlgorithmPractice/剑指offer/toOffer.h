@@ -32,6 +32,7 @@
 #include "topic28.h"    //对称的二叉树
 #include "topic50.h"    //第一个只出现一次的字符
 #include "topic52.h"    //两个链表的第一个公共节点
+#include "topic56.h"    //数组中数字出现的次数
 #include "topic58.h"    //反转字符串
 #include "topic63.h"    //求股票最大利润
 #include "topic65.h"    //不用加减乘除做加法, 不用第三个变量交换两个数值

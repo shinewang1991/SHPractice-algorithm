@@ -30,13 +30,14 @@ int search1(const int arr[],int left, int right, int key){
     int l = left;
     int r = right;
     int result = -1;
-    while (l<=right) {
-        int center = (l+r)/2;
+    int center;
+    while (l<=r) {
+        center = (l+r)/2;
         if(key > arr[center]){
-            l+=1;
+            l = center + 1;
         }
         else if(key < arr[center]){
-            r-=1;
+            r = center - 1;
         }
         else{
             result = arr[center];
