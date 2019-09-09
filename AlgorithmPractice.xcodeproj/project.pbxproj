@@ -32,6 +32,7 @@
 		1469A1A921E7821600B2AC02 /* topic25.c in Sources */ = {isa = PBXBuildFile; fileRef = 1469A1A821E7821600B2AC02 /* topic25.c */; };
 		14787521212EA9630050C383 /* quickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 14787520212EA9630050C383 /* quickSort.c */; };
 		147B4BBE223C9237007BA041 /* topic26.c in Sources */ = {isa = PBXBuildFile; fileRef = 147B4BBD223C9237007BA041 /* topic26.c */; };
+		148C0A712262D0AB00ABD7A0 /* topic56.c in Sources */ = {isa = PBXBuildFile; fileRef = 148C0A702262D0AB00ABD7A0 /* topic56.c */; };
 		148FC71E222D52B70047931F /* Interview.c in Sources */ = {isa = PBXBuildFile; fileRef = 148FC71D222D52B70047931F /* Interview.c */; };
 		1495C07D2236872800056B5C /* topic63.c in Sources */ = {isa = PBXBuildFile; fileRef = 1495C07C2236872800056B5C /* topic63.c */; };
 		149739CE2226A81200037EBC /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 149739CD2226A81200037EBC /* TestObject.m */; };
@@ -114,6 +115,8 @@
 		14787520212EA9630050C383 /* quickSort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quickSort.c; sourceTree = "<group>"; };
 		147B4BBC223C9237007BA041 /* topic26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic26.h; sourceTree = "<group>"; };
 		147B4BBD223C9237007BA041 /* topic26.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic26.c; sourceTree = "<group>"; };
+		148C0A6F2262D0AB00ABD7A0 /* topic56.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic56.h; sourceTree = "<group>"; };
+		148C0A702262D0AB00ABD7A0 /* topic56.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = topic56.c; sourceTree = "<group>"; };
 		148FC71C222D52B70047931F /* Interview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interview.h; sourceTree = "<group>"; };
 		148FC71D222D52B70047931F /* Interview.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Interview.c; sourceTree = "<group>"; };
 		1495C07B2236872800056B5C /* topic63.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = topic63.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				1401F6CD222650F8008A4B06 /* topic50.c */,
 				141660D32229270E004C597C /* topic52.h */,
 				141660D42229270E004C597C /* topic52.c */,
+				148C0A6F2262D0AB00ABD7A0 /* topic56.h */,
+				148C0A702262D0AB00ABD7A0 /* topic56.c */,
 				149739CF2226B28200037EBC /* topic58.h */,
 				149739D02226B28200037EBC /* topic58.c */,
 				1495C07B2236872800056B5C /* topic63.h */,
@@ -457,6 +462,7 @@
 				149D7B4F222E170F00C3D48C /* stack.c in Sources */,
 				14DD96C12243CF2A0080FF18 /* code62.c in Sources */,
 				14459BBF21ED879900C87AD5 /* topic18.c in Sources */,
+				148C0A712262D0AB00ABD7A0 /* topic56.c in Sources */,
 				148FC71E222D52B70047931F /* Interview.c in Sources */,
 				1401F6CE222650F8008A4B06 /* topic50.c in Sources */,
 				14E580D0221C316800385365 /* topic22.c in Sources */,
@@ -579,7 +585,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSE3H6NFMJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -590,8 +597,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSE3H6NFMJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};

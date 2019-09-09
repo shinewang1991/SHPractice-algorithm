@@ -8,6 +8,8 @@
 
 #include "topic24.h"
 
+//selection 1
+/*
 LinkList reverseLinkList(LinkList phead){
     LinkList reversedPhead = NULL;
     LinkList preNode = NULL;
@@ -22,4 +24,18 @@ LinkList reverseLinkList(LinkList phead){
         pNode = pNext;
     }
     return reversedPhead;
+}
+ */
+
+//selection 2
+LinkList reverseLinkList(LinkList pHead){
+    LinkList preNode = NULL;
+    LinkList pNode = pHead;
+    while (pNode != NULL) {
+        LinkList pNext = pNode -> next;
+        pNode -> next = preNode;
+        preNode = pNode;
+        pNode = pNext;
+    }
+    return pNode;
 }
