@@ -121,14 +121,14 @@ int PartionMid(int array[], int left ,int right)
     
 }
 
-//实现思路： 如果下标<mid去左区间找   ，如果下标>mid  去右区间找
+//实现思路： 快排思想，找到中位数，获取中位数的下标，和数组的middle下标比较。递归查找
 int FindMid(int array[], int size)
 {
     
     int mid = (size-1)/ 2;
     int left = 0;
     int right = size - 1;
-    int index = 0;
+    int index = 0;   //中位数下标
     
     index = PartionMid(array, left, right);
     
@@ -237,3 +237,63 @@ int getNumberOf1(int *arr, int len){
 //        }
 //    }
 //}
+
+#pragma mark -求无序数组中位数
+
+int partSort(int arr[], int start, int end) {
+    int low = start;
+    int high = end;
+    
+    // 读取关键字
+    int key = arr[end];
+    while (low < high) {
+        // 左边的值比key大的值
+        while (low < high && arr[low] <= key) {
+            ++low;
+        }
+        
+        // 右边找比key小的值
+        while (low < high && arr[high] >= key) {
+            --high;
+        }
+        
+        if (low < high) {
+            // 找到之后交换左右的值
+            int temp = arr[low];
+            arr[low] = arr[high];
+            arr[high] = temp;
+        }
+        
+    }
+    
+    int temp = arr[high];
+    arr[high] = arr[end];
+    arr[end] = temp;
+    
+    return low;
+}
+
+// 查找无序数组的中位数
+int findMedian(int arr[], int len) {
+    int low = 0;
+    int high = len - 1;
+    
+    int mid = (len - 1) >> 1;
+    int div = partSort(arr, low, high);
+    
+    while (div != mid) {
+        if (mid < div) {
+            // 左半区查找
+            div = partSort(arr, low, div -1);
+        }
+        else {
+            // 右半区查找
+            div = partSort(arr, div + 1, high);
+        }
+    }
+    
+    // 找到中位数
+    return arr[mid];
+}
+
+

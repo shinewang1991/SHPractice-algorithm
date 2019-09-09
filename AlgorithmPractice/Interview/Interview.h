@@ -52,3 +52,5 @@ int getNumberOf1(int *arr, int len);
 
 //找出0和1连续次数相等的最大长度
 //int getMaxValue(int *arr, int len);
+
+int findMedian(int arr[], int len);

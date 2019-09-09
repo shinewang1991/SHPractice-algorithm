@@ -39,8 +39,8 @@ void playGraph(void);
 void interviewPractice(void);
 
 int main(){
-//    sort();
-    searchFuc();
+    sort();
+//    searchFuc();
 //    travalsalTree();
 //    linkListFun();
 //    playGraph();
@@ -52,12 +52,12 @@ int main(){
 
 void sort(){
     //    int unsortArray[] = {5,2,7,4,1,0,9,8,6,3};
-    int unsortArray[] = {5,2,7,4,1,9,8,6,3,0};
+    int unsortArray[] = {5,2,7,4,1,9,8,6,3};
     int len = sizeof(unsortArray) / sizeof(*unsortArray);
-        bubbleSort(unsortArray, len);
+//        bubbleSort(unsortArray, len);
     //    selectionSort(unsortArray, len);
     //    insertionSort(unsortArray, len);
-    //    quickSort(unsortArray, len);
+        quickSort(unsortArray, len);
     //    shellSort(unsortArray, len);
 //    mergeSort(unsortArray, len);
     for(int i = 0 ; i < len ; i++){
@@ -321,9 +321,9 @@ void interviewPractice(){
 //    printf(result?"是回文字符串":"不是回文字符串");
     
     //无序数组查找中位数
-//    int arr[8] = {3,7,4,6,2,9,5,18};
-//    int len = sizeof(arr)/sizeof(*arr);
-//    printf("中位数-----%d",getMidNumber(arr, len));
+    int arr[10] = {7,4,6,2,9,5,18,19,1,22};
+    int len = sizeof(arr)/sizeof(*arr);
+    printf("中位数-----%d",findMedian(arr, len));
     
     //求两个数组的并集
 //    int a[] = {1,2,3,3,5};
@@ -346,9 +346,9 @@ void interviewPractice(){
 //    int value = getNumberIndex(arr, len, 3);
     
     //找出1连续出现的最大次数
-    int arr[9] = {0,1,1,1,0,1,0,1,1};
-    int len = sizeof(arr) / sizeof(*arr);
-    int value = getNumberOf1(arr, len);
+//    int arr[9] = {0,1,1,1,0,1,0,1,1};
+//    int len = sizeof(arr) / sizeof(*arr);
+//    int value = getNumberOf1(arr, len);
     
 }
 
