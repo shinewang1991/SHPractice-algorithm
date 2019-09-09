@@ -40,7 +40,7 @@ int search1(const int arr[],int left, int right, int key){
             r = center - 1;
         }
         else{
-            result = arr[center];
+            result = center;
             break;
         }
     }
